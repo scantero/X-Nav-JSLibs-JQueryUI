@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ejercicio 6.8.3</title>
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Drop Elements</a></li>
+      <li><a href="#tabs-2">Select Elements</a></li>
+      <li><a href="#tabs-3">Calendar</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>¡Arrastra tus favoritos a la columna de la derecha!</p>
+      <div>
+        <div id="draggable1" class="ui-widget-content">
+          <p>JQUERY</p>
+        </div>
+        <div id="draggable2" class="ui-widget-content">
+          <p>JAVASCRIPT</p>
+        </div>
+        <div id="draggable3" class="ui-widget-content">
+          <p>CSS3</p>
+        </div>
+        <div id="draggable4" class="ui-widget-content">
+          <p>HTML5</p>
+        </div>
+        <div id="draggable5" class="ui-widget-content">
+          <p>AJAX</p>
+        </div>
+        <div id="draggable6" class="ui-widget-content">
+          <p>JQUERY-UI</p>
+        </div>
+      </div>
+      <div id="droppable" class="ui-widget-header">
+        <p>Arrastra aquí tus favoritos</p>
+      </div>
+    </div>
+    <div id="tabs-2">
+      <div class="widget">
+        <h1>Elige aquí tus opciones favoritas</h1>
+        <fieldset>
+          <legend>Elige tu curso y una tecnología principal</legend>
+          <div class="controlgroup">
+            <label for="transmission-standard">IT-DAT</label>
+            <input type="radio" name="transmission" id="transmission-standard">
+            <label for="transmission-automatic">IT-AT</label>
+            <input type="radio" name="transmission" id="transmission-automatic">
+            <select id="car-type">
+              <option>HTML5</option>
+              <option>CSS3</option>
+              <option>JavaScript</option>
+              <option>Ajax</option>
+              <option>JQuery</option>
+              <option>JQueryUI</option>
+            </select>
+            <br/>
+            <p>Y ahora APIs - Elige las que más te gusten</p>
+            <label for="insurance">Google+</label>
+            <input type="checkbox">
+            <label for="insurance">Github</label>
+            <input type="checkbox">
+            <label for="insurance">Leaflet</label>
+            <input type="checkbox">
+            </br>
+            </br>
+            <button id="doneOpt">Done!</button>
+          </div>
+        </fieldset>
+
+      </div>
+    </div>
+    <div id="tabs-3">
+      <p>Elige un día</p>
+      <p>Date: <input type="text" id="datepicker"></p>
+      <p>O elige un rango de fecha</p>
+      <p>
+        <label for="from">From</label>
+        <input type="text" id="from" name="from">
+        <label for="to">to</label>
+        <input type="text" id="to" name="to">
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>
